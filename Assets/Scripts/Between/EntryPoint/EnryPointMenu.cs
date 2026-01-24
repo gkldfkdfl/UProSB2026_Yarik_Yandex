@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class EnryPointMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private SetLanguageLocalization sll;
+   
     void Start()
     {
-        
+        CSVReader.LoadCSV();
+        sll.Init();
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
